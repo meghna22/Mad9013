@@ -1,0 +1,12 @@
+body {
+	background-color : #ccc;
+	font-family: sans-serif;
+	}
+h1 {
+	font-size: 24px;
+	}
+
+article {
+	font-style: italic;
+	color: #666;
+}

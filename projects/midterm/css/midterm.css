@@ -1,0 +1,339 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+*{
+	padding:0;
+	margin:0;
+}	
+body{
+	font-size: 62.5%;
+	background-color:#D3D3D3;
+}
+.navbar 
+{
+	background-color:#808080;
+}
+.main{
+	background-color:#A4A4A4;
+	text-height:font-size:10px;
+}
+.two{
+	background-color:#CCC;}
+.three{
+	background-color:#E8E9E8;
+}
+.footer {
+	clear:both;
+	background-color:#FFFBF0
+	/*background-color:#FFFBF0;*/
+	}
+h1, h2, h3{
+	font-weight: 700;	
+	padding: 10px 20px;
+	color: #2A1F00;
+}
+h1{
+	font-size: 3.6rem;	
+	font-family: 'Sacramento', cursive;
+	text-align:center;
+}
+h2{
+	font-size: 3.0rem;	
+   font-family: 'PT Serif', serif;
+}
+h3{
+	font-size: 2.4rem;
+	font-family: 'PT Serif', serif;
+	color: #494949;
+}
+p, li, a{
+	font-weight: 400;
+	font-family: 'Source Sans Pro', sans-serif;
+	color: #555;		
+}
+p{
+	padding: 10px 20px;
+	font-size: 1.4rem;
+	font-family: 'Source Sans Pro', sans-serif;
+}
+li{
+	font-size: 1.4rem;
+	font-family: 'Source Sans Pro', sans-serif;
+}
+ol li{
+	padding: 6px 20px;
+	
+	list-style-position:inside;
+	font-family: 'Source Sans Pro', sans-serif;
+}
+a{
+	font-size: 1.4rem;
+	font-family: 'Source Sans Pro', sans-serif;
+}	
+
+/***********************************
+					Layout
+***********************************/
+.wrapper{
+	background-color:#CACACA;
+	}
+.masthead{
+	
+}
+@media screen and (min-width: 1080px){
+	.nav ul li {
+		margin-top:20px;
+	}
+	
+	.navbar {
+	position: fixed;
+	list-style:none;
+	text-align:center;
+	width: 10.5%;
+	height:200px;
+   margin-left:2%;
+   margin-top:39px;
+   background-color:#808080;
+   
+	}
+	.main{
+	float:left;
+	width:31.5%;
+	margin-top:39px;
+    margin-left:13.5%;
+	text-align:justify;
+	margin-bottom:30px;
+	
+	}
+	.two{
+		float:left;
+	width: 20%;
+	margin-top:39px;
+    margin-left:5%;
+	text-align:justify;
+	margin-bottom:60px;
+	}
+	.three{
+	float:right;
+	   width:20%;
+	   margin-top:39px;
+    margin-left:5%;
+	margin-bottom:70px;
+	margin-right:5%;
+	text-align:justify;
+	}
+}
+@media screen and (min-width:700px) and (max-width: 1080px){
+.nav ul li {
+	  width:21%;
+     float:left;	
+	 margin-left:3%;
+     list-style:none;	
+	  background-color:#808080;
+	
+}
+ h2,h3{
+	 font-style:normal;
+	font-size:2rem;
+}
+p, li, a{
+	font-size:1.2rem;	
+}
+.navbar{
+	width:100%;
+	float:left;
+	background-color:#808080;
+	margin-top:2%;
+	}
+.main{
+	float:left;
+	width:35%;
+	margin-right:5%;
+	margin-top:2%;
+	margin-left:20px;
+	margin-bottom:20px;
+}
+
+.two{
+	float:left;
+  width:21%;
+  margin-right:5%;
+  margin-top:2%;
+  margin-bottom:20px;
+}
+.three {
+	float:right;
+	width:21%;
+	margin-right:10%;
+	margin-top:2%;
+	margin-bottom:20px;
+	
+}
+}
+
+@media screen and (min-width:501px) and (max-width: 699px){
+ .nav ul li{
+  width:21%;
+  float:left;
+  margin-left:4%;
+  list-style:none;
+ 
+
+ }
+.navbar {
+	width:100%;
+	float:left;
+	overflow:hidden;
+	background-color:#808080;
+}
+
+.main{
+	width:80%;
+	float:left;
+	margin-right:30%;
+	margin-left:10%;
+	margin-top:30px;
+	margin-bottom:10px;
+}
+p, li, a
+{
+	font-size:1.2rem;
+}
+h2,h3 {
+font-size:2rem;
+
+}
+.two {
+	width:45%;
+	float:left;
+	margin-left:3%;
+	margin-top:30px;	
+	margin-bottom:10px;
+	margin-bottom:10px;
+}
+.three {
+	width:45%;
+	float:left;
+	margin-left:3%;
+	margin-top:30px;
+	margin-bottom:50px;	
+}
+}
+@media screen and (max-width:500px){
+.nav ul li {
+	width:35%;
+	float:left;
+	list-style:none;
+	margin-left:50px;
+	}
+.navbar {
+	width:100%;
+	float:left;
+	margin-bottom:10px;
+	margin-right:10px;
+}
+h2,h3 {
+	font-size:2rem;
+}
+p, li, a{
+	
+	font-size:1.2rem;
+	font-variant:normal;
+}
+.main{
+     width:90%;
+	 float:left;
+	 margin-top:10px;
+	 margin-bottom:10px;
+	 margin-left:18px;
+	 margin-right:6px;
+}
+
+.two 
+{
+	width:90%;
+	float:left;
+	margin-top:10px;
+	margin-bottom:18px;
+	margin-left:18px;
+	margin-right:6px;
+	
+}
+.three {
+	width:90%;
+	float:left;
+	margin-top:10;
+	margin-bottom:16px;
+	margin-left:18px;
+	margin-right:6px;
+}
+
+}
+
+.nav ul li {
+
+}
+.navbar{
+ 
+ }
+.main{
+	
+}
+.two {
+	
+}
+.three
+{
+
+}
+
+.footer{
+	text-align:center;	
+}
+/***********************************
+					Masthead
+***********************************
+.masthead h1{
+	padding: 30px 20px;
+}.sidebar p{
+	font-size: 1.4rem;	
+}
+.instructions{
+	color: #C30;	
+}
+
+/***********************************
+					Navigation
+***********************************
+
+.navbar li{
+	float:left;	
+	width: 240px;  /* 960/4 = 240  works if the layout is 960
+	list-style:none;
+}
+.navbar a{
+	display: block;	
+	padding: 8px 16px;
+	
+	text-decoration: none;
+	
+	
+}
+.navbar a:visited,
+.navbar a:hover,
+.navbar a:active,
+.navbar a:focus{
+	color: #fff;
+	background-color: #808080;
+}
+.sidebar p{
+	font-size: 1.4rem;	
+}
+.instructions{
+	color: #C30;	
+}
+}
+/***********************************
+					Content
+***********************************

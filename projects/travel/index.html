@@ -1,0 +1,103 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Travel Form</title>
+<link href='http://fonts.googleapis.com/css?family=Julius+Sans+One' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Expletus+Sans' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
+	  <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+      <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+      <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
+      <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+      <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+      <link rel="stylesheet" href="/resources/demos/style.css" />
+      
+         <link type="text/css" rel="stylesheet" href="travel.css">
+        <script type="text/javascript" src="travel.js"></script>
+<marquee behavior="scroll" direction="left"> <img src="inthecar.gif"  width="200" />Welcome to Travel Website</marquee>
+</head>
+<header>Travel Form</header>
+<body>
+    <div class="wrapper">
+        <form name="TravelForm" action="index.html" onsubmit="return validateForm()"  method="post"  autocomplete="on">
+        	<!--<div class="a">-->
+            <div class="b">
+                <!--<img src="car.png">-->
+                <div class="formbox" id ="departureCity">
+                    <label for="city">Departure city</label>
+                    <input type="text" name="cityName" id ="city" placeholder="Enter city name" ><br><br> 
+                </div>
+                <div class="formbox" id="destinationCity">
+                <label>Destination city</label>
+                <input type="text" name="ciname"  id="destinationCty"placeholder="Enter city name">
+                </div>
+            </div>
+        	<!--</div>-->
+        	<!--<div class="b">-->
+            <div class="date">
+                <!--<img src="date.png">-->
+                <div class="formbox" id="date">
+                    <label>Date of departure</label>
+                  <input type="text" id="datepicker1" placeholder="Enter date"/><br> <br>
+                </div>
+                <div class="formbox" id="date">
+                    <label>Date of return</label>
+                 <input type="text" id="datepicker2" placeholder="Enter Date"/>
+                </div>
+            </div>
+        <!--</div>-->
+        
+        <div class="bc">
+        <div class="formbox" id ="adults">
+        <p class="adult"> Number of Adults:
+        <select>
+        
+          <option value="0">0</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <<option value="8">8</option>
+          
+        </select></p>
+        </div>
+        <div class="formbox" id="children">
+        <p>Number of Children:<select>
+        
+          <option value="0">0</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          
+        
+        </select></p></div>
+        </div>
+        
+        <div class="price">
+        <div class="formbox" id="range">
+         <label for="amount">Price range:</label>
+          <input type="text" id="amount" style="border: 0; color: #f6931f; font-weight: bold;" />
+         
+        <div id="slider-range"></div>
+        </div>
+        </div>
+        </div>
+        <button class="btn">Submit</button>
+        </form>
+        
+        <footer class="footer">
+            <p>Cuma Travel(M)&copy;2013</p>
+        </footer>
+    </div>
+</body>
+</html>
